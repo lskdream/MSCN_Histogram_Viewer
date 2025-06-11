@@ -25,20 +25,21 @@ They normalize an image’s local structure and are often modeled as Gaussian-li
 
 ```bash
 pip install numpy scipy opencv-python matplotlib
+```
 
-▶️ Run from CLI
+## ▶️ Run from CLI
 python calc_mscn.py --img path/to/image.jpg
 This will:
 Read the image
 Compute MSCN coefficients
 Plot and display the histogram using matplotlib
 
-📊 Output
+## 📊 Output
 The histogram shows the distribution of MSCN values, typically centered around zero and symmetric for natural images.
 
-🧪 Notes
+## 🧪 Notes
 Input image should be grayscale; if not, it's converted automatically.
 You can modify the bins count in the plot_histogram() function to change histogram resolution.
 
-✍️ Author
+## ✍️ Author
 Tool refactored by Yu-Chih Chen, based on BRISQUE MSCN logic.
